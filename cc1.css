@@ -1,0 +1,213 @@
+/*RAGHAD MOHAMEED 2006386*/
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #c4c4c4;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.main {
+    display: flex;
+    width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    padding: 10px;
+}
+
+.main .leftPart {
+    width: 35%;
+    background: #3c375f;
+}
+
+.main .leftPart .cVimage {
+    width: 100%;
+}
+
+.main .leftPart .cVimage img {
+    width: 100%;
+    display: block;
+}
+
+.main .resume_title {
+    color: rgb(255, 250, 250);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+.main .leftPart .resume_info {
+    color: #dad7ef;
+}
+
+main .leftPart .bottomPart {
+    padding: 20px 30px;
+}
+
+.main .resume_item {
+    padding: 20px 0;
+    border-bottom: 1px solid #0175b2;
+}
+
+.main .resume_item:last-child {
+    border-bottom: 0;
+}
+
+.main .leftPart .namerole {
+    display: none;
+}
+
+.rmain .namerole .name {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 5px;
+    letter-spacing: 4px;
+}
+
+.main .leftPart .namerole .role {
+    color: #f8f7ff;
+}
+
+.rmain .leftPart .resume_contact .resume_info:last-child {
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.main .leftPart .resume_contact .resume_subtitle {
+    color: #fff;
+    margin-bottom: 2px;
+}
+
+.main .leftPart .resume_skills .skills_list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+
+.main .resume_right {
+    width: 65%;
+    padding: 20px 40px;
+    color: #26252d;
+}
+
+.main.resume_right .namerole .name {
+    color: #26252d;
+    font-size: 32px;
+}
+
+.main.resume_right .namerole .role {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.main .resume_right .resume_item .resume_title {
+    color: #26252d;
+}
+
+.main .resume_right .resume_data {
+    display: flex;
+}
+
+.main .resume_right .resume_data .year {
+    padding-right: 35px;
+    width: 115px;
+    position: relative;
+}
+
+.main .resume_right .resume_data .content {
+    padding-left: 35px;
+    margin-bottom: 20px;
+    width: calc(100% - 115px);
+}
+
+.main .resume_right .resume_data .year:before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border: 1px solid #26252d;
+    border-radius: 50%;
+}
+
+.main .resume_right .resume_data .year:after {
+    content: "";
+    position: absolute;
+    top: 17px;
+    right: 4px;
+    width: 3px;
+    height: 90%;
+    background: #0175b2;
+}
+
+.main .resume_right .resume_data:last-child .year:after {
+    display: none;
+}
+
+.main .resume_right .resmue_interests .resume_info {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .main .resume_right .namerole {
+        display: none;
+    }
+
+    .main .leftPart .namerole {
+        display: block;
+    }
+
+    .main {
+        width: 95%;
+        margin: 10px auto;
+        flex-direction: column;
+    }
+
+    .main .leftPart,
+    .main .resume_right {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 424px) {
+    .main .resume_right {
+        padding: 20px 30px;
+    }
+
+    .main .resume_right .resume_data {
+        flex-direction: column;
+    }
+
+    .main .resume_right .resume_data .year {
+        padding: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        color: #0175b2;
+    }
+
+    .main .resume_right .resume_data .year:before,
+    .main .resume_right .resume_data .year:after {
+        display: none;
+    }
+
+    .main .resume_right .resume_data .content {
+        width: 100%;
+        padding: 0;
+    }
